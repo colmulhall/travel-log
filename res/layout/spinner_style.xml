@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The spinners have a specific style so that they can 
+	 be modified. This is used in this app to make the items 
+	 in the spinners centered. -->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+android:id/text1"
+	style="?android:attr/spinnerItemStyle"
+	android:singleLine="true"
+	android:textIsSelectable="false"
+	android:textColor="#ffffff"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:ellipsize="marquee"
+    android:minHeight="48dp"/>

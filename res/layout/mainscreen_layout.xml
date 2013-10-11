@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This is where the list layout is defined. The list is 
+	 in a relative layout with the buttons. -->
+	 
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@color/yellow"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom"
+    android:background="@drawable/map"
+    android:fadingEdge="vertical"
+    android:gravity="center|left"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:visibility="visible" >
+    
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/yourplaces"
+        android:textColor="@color/black"
+        android:textSize="45sp" />
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <RelativeLayout
+        style="@color/yellow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/goedit"
+            android:layout_marginBottom="5dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:dividerHeight="1dp"
+            android:gravity="center"
+            android:fadeScrollbars="true"
+            android:textColor="@color/blue" />
+
+        <Button
+            android:id="@+id/goedit"
+            style="@style/AppBaseTheme"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/goadd"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/gostats"
+            style="@style/AppBaseTheme"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/stats"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:typeface="sans" />
+        
+    </RelativeLayout>
+</LinearLayout>
