@@ -252,10 +252,10 @@ public class AddCountry extends Activity
     {
     	switch (item.getItemId()) 
         {
-	      case R.id.map_action:
+	      /*case R.id.map_action:
 				Intent intent = new Intent(AddCountry.this, MapAct.class);
 				startActivity(intent);
-				break;
+				break;*/
 				
 	      case R.id.about_action:
 	        	DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() 

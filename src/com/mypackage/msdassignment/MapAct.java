@@ -9,7 +9,7 @@
  * 
  * ********************************************************************/
 
-package com.mypackage.msdassignment;
+/*package com.mypackage.msdassignment;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -102,4 +102,4 @@ public class MapAct extends FragmentActivity //implements OnMapClickListener, On
 		super.onPause();
 		finish();
 	}
-}
+}*/
